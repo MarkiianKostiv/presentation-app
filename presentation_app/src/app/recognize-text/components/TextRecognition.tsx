@@ -1,8 +1,8 @@
 "use client";
-import { textRecognizeStore } from "../stores/textRecognizeStore";
+import { textRecognizeStore } from "../../stores/textRecognizeStore";
 import { useState } from "react";
 import { ClipboardCopy } from "lucide-react";
-import { LoadingSpinner } from "./ui/Loader";
+import { LoadingSpinner } from "../../../components/ui/Loader";
 
 const TextRecognition = () => {
   const { recognizedText, loading } = textRecognizeStore();
@@ -21,10 +21,8 @@ const TextRecognition = () => {
   };
 
   return (
-    <div className='mt-4 bg-white p-6 rounded-lg shadow-md max-w-[50%] w-full'>
-      <h2 className='text-xl font-semibold text-gray-800 mb-2'>
-        Recognized Text:
-      </h2>
+    <div className='mt-4 p-6 rounded-lg shadow-md max-w-[50%] w-full'>
+      <h2 className='text-xl font-semibold mb-2'>Recognized Text:</h2>
       {loading ? (
         <LoadingSpinner />
       ) : (

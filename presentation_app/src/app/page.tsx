@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className='min-h-screen flex items-center justify-center bg-gray-50 px-4'>
+    <main className='min-h-screen flex items-center justify-center px-4'>
       <section className='text-center max-w-xl'>
         <h1 className='text-4xl font-bold mb-4'>📄 Extract Text from Images</h1>
-        <p className='text-lg text-gray-700 mb-8'>
+        <p className='text-lg mb-8'>
           Upload a screenshot or any image, and we&#39;ll recognize and extract
           the text in seconds. A simple and convenient tool to copy text from
           images.

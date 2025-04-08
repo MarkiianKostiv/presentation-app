@@ -1,7 +1,7 @@
 "use client";
 import { ChangeEvent } from "react";
 import TextRecognition from "./TextRecognition";
-import { textRecognizeStore } from "../stores/textRecognizeStore";
+import { textRecognizeStore } from "../../stores/textRecognizeStore";
 import Image from "next/image";
 
 const ImageUploader = () => {
@@ -18,17 +18,15 @@ const ImageUploader = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100'>
-      <div className='bg-white rounded-2xl shadow-md p-6 w-full max-w-[50%]'>
-        <h2 className='text-2xl font-semibold text-center mb-4 text-gray-800'>
-          Upload img
-        </h2>
+    <div className='flex flex-col items-center justify-center min-h-screen p-6 '>
+      <div className='rounded-2xl shadow-md p-6 w-full max-w-[50%]'>
+        <h2 className='text-2xl font-semibold text-center mb-4'>Upload img</h2>
 
         <input
           type='file'
           accept='image/*'
           onChange={handleImageUpload}
-          className='block w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4
+          className='block w-full text-sm file:mr-4 file:py-2 file:px-4
           file:rounded-full file:border-0
           file:text-sm file:font-semibold
           file:bg-blue-50 file:text-blue-700

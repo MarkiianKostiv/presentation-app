@@ -1,9 +1,9 @@
-import ImageUploader from "../components/ImageUploader";
+import ImageUploader from "./components/ImageUploader";
 
 export default function RecognizeTextPage() {
   return (
-    <div>
+    <main>
       <ImageUploader />
-    </div>
+    </main>
   );
 }
