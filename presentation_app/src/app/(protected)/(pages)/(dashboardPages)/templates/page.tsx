@@ -1,6 +1,6 @@
 import { getAllProjects } from "@/actions/projects";
 
-const DashboardPage = async () => {
+const TemplatesPage = async () => {
   const allProjects = await getAllProjects();
   return (
     <div className='w-full flex flex-col gap-6 relative'>
@@ -10,7 +10,7 @@ const DashboardPage = async () => {
       >
         <div className='flex flex-col items-start'>
           <h1 className='text-2xl font-semibold dark:text-primary backdrop-blur-lg'>
-            Projects
+            Templates
           </h1>
           <p className='text-base font-normal dark:text-secondary'>
             All your presentations
@@ -21,4 +21,4 @@ const DashboardPage = async () => {
   );
 };
 
-export default DashboardPage;
+export default TemplatesPage;
