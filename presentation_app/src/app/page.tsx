@@ -1,3 +1,4 @@
+import { appRoutes } from "@/config/app-routes";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         </p>
         <Link
           className='inline-block px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition'
-          href='/recognize-text'
+          href={appRoutes.recognizeText}
         >
           🔍 Go to Text Extractor
         </Link>
